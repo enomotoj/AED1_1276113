@@ -1,4 +1,15 @@
-    #include<stdio.h>
+/* --------------------------------------------------------------------------
+Disciplina  : Algortimo e Estrutura de Dados 2026S1
+Nome        : Julia Enomoto Aguiar
+Linguagem   : C
+Problema    : https://judge.beecrowd.com/pt/problems/view/1180
+Data        : 10/08/2026
+Objetivo    : Exibir o menor valor de um vetor
+Dificuldade : 
+Uso de IA   : uso da ia para compilar o codigo
+-------------------------------------------------------------------------- */
+
+#include<stdio.h>
         int main(){
             
             int N;
