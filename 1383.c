@@ -1,3 +1,13 @@
+/* --------------------------------------------------------------------------
+Disciplina  : Algortimo e Estrutura de Dados 2026S1
+Nome        : Júlia Enomoto Aguiar
+Linguagem   : C
+Problema    : https://judge.beecrowd.com/pt/problems/view/1383
+Data        : 22/08/2026
+Objetivo    : Montar um sudoku
+Dificuldade : interpretacao da alocacao dos valores de cada vetor componente da matriz
+Uso de IA   : Uso de ia para encontar erro de complicao
+-------------------------------------------------------------------------- */
 #include <stdio.h>
 
 int verf_sudoku(int matriz[9][9]) {
