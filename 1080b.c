@@ -8,27 +8,18 @@ Objetivo    : Leia 100 valores inteiros. Apresente então o maior valor lido e a
 Dificuldade : uso de ponteiros
 Uso de IA   : compilacao do código e sugestões de melhorias
 -------------------------------------------------------------------------- */
-#include<stdio.h>
-#include<stdlib.h>
-int main(){
-    int *vet = (int*)malloc(100 * sizeof(int));
-    int i = 0, maior = 0, posicao = 0;
-
-    //verificar se a memoria foi alocada corretamente
-    if( vet == NULL){
-        printf("Erro durante a alocacao da memoria:\n");
-        return 1;
-    }
-    printf("Digite os 100 valores inteiros desejados:\n");
-    for(i = 0; i < 100 ; i ++){
+#include <stdio.h>
+ 
+int main() {
+    int vet[100];
+    int *pon = &vet[0];
+    for (int i = 0 ; i< 100; i++){
         scanf("%d", &vet[i]);
-        if (vet[i] > maior){
-            maior = vet[i];
-            posicao = i + 1;
+        if(vet[i]> *pon){
+            pon = &vet[i];
         }
     }
-    printf("%d\n", maior);
-    printf("%d\n", posicao);
-    free(vet);
+    printf("%d\n", *pon);
+    printf("%d\n", (pon- vet)+1);
     return 0;
 }
